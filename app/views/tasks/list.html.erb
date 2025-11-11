@@ -1,0 +1,8 @@
+<div class="task-list">
+  <ol>
+    <% @tasks.each do |task| %>
+    <li class="text-decoration-none"><%= link_to task.title, task_path(task.id) %></li>
+    <% end %>
+  </ol>
+  <p><%= link_to "Add a new task", new_task_path %></p>
+</div>

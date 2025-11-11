@@ -1,0 +1,11 @@
+<h3>Edit a New Task</h3>
+<div class="simple-form">
+  <%= simple_form_for @task do |f| %>
+    <%= f.input :title %>
+    <%= f.input :details %>
+    <%= f.submit class: 'btn btn-primary' %>
+  <% end %>
+</div>
+<div class="m-3">
+<%= link_to "Go back", list_path%>
+</div>
